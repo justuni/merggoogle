@@ -1,0 +1,716 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B214E06B1B72F17500126821 /* libGDataTouchStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B214E0621B72F16500126821 /* libGDataTouchStaticLib.a */; };
+		B214E0831B797A8200126821 /* mergGoogle.lcidl in Sources */ = {isa = PBXBuildFile; fileRef = B2E2149D1B65A58E001F9282 /* mergGoogle.lcidl */; };
+		B214E0841B797A8600126821 /* mergGoogle.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E2149F1B65A58E001F9282 /* mergGoogle.m */; };
+		B214E0851B797A8A00126821 /* com_merg_oauth_delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D95E41B65D19B005B3DCD /* com_merg_oauth_delegate.m */; };
+		B214E0861B797A8E00126821 /* com_merg_spreadsheet_delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D95E91B65E19A005B3DCD /* com_merg_spreadsheet_delegate.m */; };
+		B214E0891B797AC900126821 /* GData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B214E0601B72F16500126821 /* GData.framework */; };
+		B214E08B1B797AE700126821 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B214E08A1B797AE700126821 /* Foundation.framework */; };
+		B214E08D1B797AEE00126821 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B214E08C1B797AEE00126821 /* Security.framework */; };
+		B214E08F1B797AF800126821 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B214E08E1B797AF800126821 /* libxml2.dylib */; };
+		B214E0911B797B1100126821 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B214E0901B797B1100126821 /* CoreGraphics.framework */; };
+		B214E0931B797B1900126821 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B214E0921B797B1900126821 /* CFNetwork.framework */; };
+		B214E0961B797B5300126821 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B214E0951B797B5300126821 /* SystemConfiguration.framework */; };
+		B214E09C1B797E1E00126821 /* GData.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B214E0601B72F16500126821 /* GData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B214E0A71B79A07500126821 /* GTMOAuth2Window.xib in Sources */ = {isa = PBXBuildFile; fileRef = B214E0A61B79A07500126821 /* GTMOAuth2Window.xib */; };
+		B23D95E61B65D19B005B3DCD /* com_merg_oauth_delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D95E41B65D19B005B3DCD /* com_merg_oauth_delegate.m */; };
+		B23D95EB1B65E19A005B3DCD /* com_merg_spreadsheet_delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D95E91B65E19A005B3DCD /* com_merg_spreadsheet_delegate.m */; };
+		B2E2149E1B65A58E001F9282 /* mergGoogle.lcidl in Sources */ = {isa = PBXBuildFile; fileRef = B2E2149D1B65A58E001F9282 /* mergGoogle.lcidl */; };
+		B2E214A01B65A58E001F9282 /* mergGoogle.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E2149F1B65A58E001F9282 /* mergGoogle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B214E05F1B72F16500126821 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B214E0571B72F16500126821 /* GData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F38F6A60B66E91D00B24B81;
+			remoteInfo = GDataFramework;
+		};
+		B214E0611B72F16500126821 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B214E0571B72F16500126821 /* GData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F1C6E0F1027B3CE00B46459;
+			remoteInfo = GDataTouchStaticLib;
+		};
+		B214E0631B72F16500126821 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B214E0571B72F16500126821 /* GData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F14A9DD0B1276B70072EBB8;
+			remoteInfo = GDataUnitTests;
+		};
+		B214E0651B72F16500126821 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B214E0571B72F16500126821 /* GData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F85E018103B83B700B4C418;
+			remoteInfo = GDataIPhoneUnitTests;
+		};
+		B214E0671B72F16500126821 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B214E0571B72F16500126821 /* GData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F1AD9020B71603F00DC0485;
+			remoteInfo = DevelopmentTestTool;
+		};
+		B214E0691B72F16F00126821 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B214E0571B72F16500126821 /* GData.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F1C6E0E1027B3CE00B46459;
+			remoteInfo = GDataTouchStaticLib;
+		};
+		B214E0871B797AB900126821 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B214E0571B72F16500126821 /* GData.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F38F6A50B66E91D00B24B81;
+			remoteInfo = GDataFramework;
+		};
+		B2E214991B65A58E001F9282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2E2148C1B65A58E001F9282 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2E214931B65A58E001F9282;
+			remoteInfo = mergGoogle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B214E09B1B797E0B00126821 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B214E09C1B797E1E00126821 /* GData.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B214E0571B72F16500126821 /* GData.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GData.xcodeproj; path = "gdata-objectivec-client-read-only/Source/GData.xcodeproj"; sourceTree = "<group>"; };
+		B214E07C1B797A4C00126821 /* mergGoogle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mergGoogle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B214E07F1B797A4C00126821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B214E08A1B797AE700126821 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B214E08C1B797AEE00126821 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		B214E08E1B797AF800126821 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/libxml2.dylib; sourceTree = DEVELOPER_DIR; };
+		B214E0901B797B1100126821 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		B214E0921B797B1900126821 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		B214E0951B797B5300126821 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		B214E0A61B79A07500126821 /* GTMOAuth2Window.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GTMOAuth2Window.xib; path = "gdata-objectivec-client-read-only/Source/OAuth2/Mac/GTMOAuth2Window.xib"; sourceTree = "<group>"; };
+		B228051F1CEFCD96003FFD49 /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = "gdata-objectivec-client-read-only/Source/OAuth2/Touch/GTMOAuth2ViewTouch.xib"; sourceTree = "<group>"; };
+		B23D95E31B65D19B005B3DCD /* com_merg_oauth_delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = com_merg_oauth_delegate.h; sourceTree = "<group>"; };
+		B23D95E41B65D19B005B3DCD /* com_merg_oauth_delegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = com_merg_oauth_delegate.m; sourceTree = "<group>"; };
+		B23D95E81B65E19A005B3DCD /* com_merg_spreadsheet_delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = com_merg_spreadsheet_delegate.h; sourceTree = "<group>"; };
+		B23D95E91B65E19A005B3DCD /* com_merg_spreadsheet_delegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = com_merg_spreadsheet_delegate.m; sourceTree = "<group>"; };
+		B23F78B21BE93DA20052CE7A /* Global.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Global.xcconfig; path = ../Global.xcconfig; sourceTree = "<group>"; };
+		B2883EE31B804243006A4820 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		B2E214941B65A58E001F9282 /* libmergGoogle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmergGoogle.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2E214981B65A58E001F9282 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2E2149C1B65A58E001F9282 /* mergGoogle.ios */ = {isa = PBXFileReference; lastKnownFileType = text; path = mergGoogle.ios; sourceTree = "<group>"; };
+		B2E2149D1B65A58E001F9282 /* mergGoogle.lcidl */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.livecode.idl; path = mergGoogle.lcidl; sourceTree = "<group>"; };
+		B2E2149F1B65A58E001F9282 /* mergGoogle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mergGoogle.m; sourceTree = "<group>"; };
+		B2E214A11B65A58E001F9282 /* mergGoogle.livecode */ = {isa = PBXFileReference; lastKnownFileType = file; path = mergGoogle.livecode; sourceTree = "<group>"; };
+		B2E214A21B65A58E001F9282 /* test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "test-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B214E0791B797A4C00126821 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B214E0961B797B5300126821 /* SystemConfiguration.framework in Frameworks */,
+				B214E0931B797B1900126821 /* CFNetwork.framework in Frameworks */,
+				B214E0911B797B1100126821 /* CoreGraphics.framework in Frameworks */,
+				B214E08F1B797AF800126821 /* libxml2.dylib in Frameworks */,
+				B214E08D1B797AEE00126821 /* Security.framework in Frameworks */,
+				B214E08B1B797AE700126821 /* Foundation.framework in Frameworks */,
+				B214E0891B797AC900126821 /* GData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2E214911B65A58E001F9282 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B214E06B1B72F17500126821 /* libGDataTouchStaticLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B214E0581B72F16500126821 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B214E0601B72F16500126821 /* GData.framework */,
+				B214E0621B72F16500126821 /* libGDataTouchStaticLib.a */,
+				B214E0641B72F16500126821 /* GDataUnitTests.xctest */,
+				B214E0661B72F16500126821 /* GDataIPhoneUnitTests.octest */,
+				B214E0681B72F16500126821 /* DevelopmentTestTool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B214E07D1B797A4C00126821 /* mergGoogle-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				B214E07E1B797A4C00126821 /* Supporting Files */,
+			);
+			path = "mergGoogle-OSX";
+			sourceTree = "<group>";
+		};
+		B214E07E1B797A4C00126821 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B214E07F1B797A4C00126821 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B214E0941B797B2E00126821 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B214E0951B797B5300126821 /* SystemConfiguration.framework */,
+				B214E0921B797B1900126821 /* CFNetwork.framework */,
+				B214E0901B797B1100126821 /* CoreGraphics.framework */,
+				B214E08E1B797AF800126821 /* libxml2.dylib */,
+				B214E08C1B797AEE00126821 /* Security.framework */,
+				B214E08A1B797AE700126821 /* Foundation.framework */,
+			);
+			name = "Frameworks and Libraries";
+			path = mergGoogle.xcodeproj;
+			sourceTree = "<group>";
+		};
+		B2E2148B1B65A58E001F9282 = {
+			isa = PBXGroup;
+			children = (
+				B228051F1CEFCD96003FFD49 /* GTMOAuth2ViewTouch.xib */,
+				B23F78B21BE93DA20052CE7A /* Global.xcconfig */,
+				B2883EE31B804243006A4820 /* WebKit.framework */,
+				B214E0A61B79A07500126821 /* GTMOAuth2Window.xib */,
+				B214E0571B72F16500126821 /* GData.xcodeproj */,
+				B214E0941B797B2E00126821 /* Frameworks and Libraries */,
+				B2E2149B1B65A58E001F9282 /* mergGoogle */,
+				B214E07D1B797A4C00126821 /* mergGoogle-OSX */,
+				B2E214951B65A58E001F9282 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2E214951B65A58E001F9282 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2E214941B65A58E001F9282 /* libmergGoogle.a */,
+				B2E214981B65A58E001F9282 /* test.app */,
+				B214E07C1B797A4C00126821 /* mergGoogle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2E2149B1B65A58E001F9282 /* mergGoogle */ = {
+			isa = PBXGroup;
+			children = (
+				B2E2149C1B65A58E001F9282 /* mergGoogle.ios */,
+				B2E2149D1B65A58E001F9282 /* mergGoogle.lcidl */,
+				B2E2149F1B65A58E001F9282 /* mergGoogle.m */,
+				B23D95E31B65D19B005B3DCD /* com_merg_oauth_delegate.h */,
+				B23D95E41B65D19B005B3DCD /* com_merg_oauth_delegate.m */,
+				B23D95E81B65E19A005B3DCD /* com_merg_spreadsheet_delegate.h */,
+				B23D95E91B65E19A005B3DCD /* com_merg_spreadsheet_delegate.m */,
+				B2E214A11B65A58E001F9282 /* mergGoogle.livecode */,
+				B2E214A21B65A58E001F9282 /* test-Info.plist */,
+			);
+			path = mergGoogle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B214E07B1B797A4C00126821 /* mergGoogle-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B214E0801B797A4C00126821 /* Build configuration list for PBXNativeTarget "mergGoogle-OSX" */;
+			buildPhases = (
+				B214E0781B797A4C00126821 /* Sources */,
+				B214E0791B797A4C00126821 /* Frameworks */,
+				B214E07A1B797A4C00126821 /* Resources */,
+				B214E09B1B797E0B00126821 /* CopyFiles */,
+				B214E09A1B797D6D00126821 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B214E0881B797AB900126821 /* PBXTargetDependency */,
+			);
+			name = "mergGoogle-OSX";
+			productName = "mergGoogle-OSX";
+			productReference = B214E07C1B797A4C00126821 /* mergGoogle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		B2E214931B65A58E001F9282 /* mergGoogle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2E214A51B65A58E001F9282 /* Build configuration list for PBXNativeTarget "mergGoogle" */;
+			buildPhases = (
+				B2E214901B65A58E001F9282 /* Sources */,
+				B2E214911B65A58E001F9282 /* Frameworks */,
+				B2E214921B65A58E001F9282 /* ShellScript */,
+				B2E214DD1B65BF79001F9282 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B214E06A1B72F16F00126821 /* PBXTargetDependency */,
+			);
+			name = mergGoogle;
+			productName = mergGoogle;
+			productReference = B2E214941B65A58E001F9282 /* libmergGoogle.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B2E214971B65A58E001F9282 /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2E214A81B65A58E001F9282 /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				B2E214961B65A58E001F9282 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2E2149A1B65A58E001F9282 /* PBXTargetDependency */,
+			);
+			name = test;
+			productName = test;
+			productReference = B2E214981B65A58E001F9282 /* test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2E2148C1B65A58E001F9282 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				TargetAttributes = {
+					B214E07B1B797A4C00126821 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = B2E2148F1B65A58E001F9282 /* Build configuration list for PBXProject "mergGoogle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B2E2148B1B65A58E001F9282;
+			productRefGroup = B2E214951B65A58E001F9282 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B214E0581B72F16500126821 /* Products */;
+					ProjectRef = B214E0571B72F16500126821 /* GData.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B2E214931B65A58E001F9282 /* mergGoogle */,
+				B2E214971B65A58E001F9282 /* test */,
+				B214E07B1B797A4C00126821 /* mergGoogle-OSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B214E0601B72F16500126821 /* GData.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GData.framework;
+			remoteRef = B214E05F1B72F16500126821 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B214E0621B72F16500126821 /* libGDataTouchStaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGDataTouchStaticLib.a;
+			remoteRef = B214E0611B72F16500126821 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B214E0641B72F16500126821 /* GDataUnitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GDataUnitTests.xctest;
+			remoteRef = B214E0631B72F16500126821 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B214E0661B72F16500126821 /* GDataIPhoneUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GDataIPhoneUnitTests.octest;
+			remoteRef = B214E0651B72F16500126821 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B214E0681B72F16500126821 /* DevelopmentTestTool */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = DevelopmentTestTool;
+			remoteRef = B214E0671B72F16500126821 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B214E07A1B797A4C00126821 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B214E09A1B797D6D00126821 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -rf \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME.bundle\" \"$SRCROOT/binaries\"\n";
+		};
+		B2E214921B65A58E001F9282 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "sh \"$LIVECODE_SDKROOT/tools/lclink.sh\"";
+		};
+		B2E214961B65A58E001F9282 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "sh \"$LIVECODE_SDKROOT/tools/lclinktest.sh\"";
+		};
+		B2E214DD1B65BF79001F9282 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ ! -f \"$SRCROOT/resources/GTMOAuth2ViewTouch.nib\" ];\nthen\n    mkdir -p \"$SRCROOT/resources\"\n    ibtool --compile \"$SRCROOT/resources/GTMOAuth2ViewTouch.nib\" \"$SRCROOT/gdata-objectivec-client-read-only/Source/OAuth2/Touch/GTMOAuth2ViewTouch.xib\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B214E0781B797A4C00126821 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B214E0A71B79A07500126821 /* GTMOAuth2Window.xib in Sources */,
+				B214E0861B797A8E00126821 /* com_merg_spreadsheet_delegate.m in Sources */,
+				B214E0831B797A8200126821 /* mergGoogle.lcidl in Sources */,
+				B214E0851B797A8A00126821 /* com_merg_oauth_delegate.m in Sources */,
+				B214E0841B797A8600126821 /* mergGoogle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2E214901B65A58E001F9282 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2E2149E1B65A58E001F9282 /* mergGoogle.lcidl in Sources */,
+				B23D95EB1B65E19A005B3DCD /* com_merg_spreadsheet_delegate.m in Sources */,
+				B2E214A01B65A58E001F9282 /* mergGoogle.m in Sources */,
+				B23D95E61B65D19B005B3DCD /* com_merg_oauth_delegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B214E06A1B72F16F00126821 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GDataTouchStaticLib;
+			targetProxy = B214E0691B72F16F00126821 /* PBXContainerItemProxy */;
+		};
+		B214E0881B797AB900126821 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GDataFramework;
+			targetProxy = B214E0871B797AB900126821 /* PBXContainerItemProxy */;
+		};
+		B2E2149A1B65A58E001F9282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2E214931B65A58E001F9282 /* mergGoogle */;
+			targetProxy = B2E214991B65A58E001F9282 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B214E0811B797A4C00126821 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$BUILT_PRODUCTS_DIR/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "mergGoogle-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = mergGoogle;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		B214E0821B797A4C00126821 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$BUILT_PRODUCTS_DIR/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "mergGoogle-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = mergGoogle;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B2E214A31B65A58E001F9282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B23F78B21BE93DA20052CE7A /* Global.xcconfig */;
+			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "\"$(LIVECODE_SDKROOT)/headers\"";
+				LIVECODE_SDKROOT = "$(USER_LIBRARY_DIR)/Application Support/RunRev/Components/LiveCodeSDK";
+				LIVECODE_TEST_EXTERNAL = mergGoogle;
+				LIVECODE_TEST_STACK = "$(SRCROOT)/mergGoogle/mergGoogle.livecode";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2E214A41B65A58E001F9282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B23F78B21BE93DA20052CE7A /* Global.xcconfig */;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "\"$(LIVECODE_SDKROOT)/headers\"";
+				LIVECODE_SDKROOT = "$(USER_LIBRARY_DIR)/Application Support/RunRev/Components/LiveCodeSDK";
+				LIVECODE_TEST_EXTERNAL = mergGoogle;
+				LIVECODE_TEST_STACK = "$(SRCROOT)/mergGoogle/mergGoogle.livecode";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B2E214A61B65A58E001F9282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				HEADER_SEARCH_PATHS = (
+					"\"$(LIVECODE_SDKROOT)/headers\"",
+					"\"$(SRCROOT)\"/**",
+					/usr/include/libxml2,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				LIVECODE_DEP_FILE = "$(SRCROOT)/mergGoogle/mergGoogle.ios";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DGDATA_INCLUDE_SPREADSHEET_SERVICE=1",
+					"-DGDATA_REQUIRE_SERVICE_INCLUDES=0",
+					"-DGTM_INCLUDE_OAUTH2=1",
+					"-DGDATA_IPHONE=1",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B2E214A71B65A58E001F9282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				HEADER_SEARCH_PATHS = (
+					"\"$(LIVECODE_SDKROOT)/headers\"",
+					"\"$(SRCROOT)\"/**",
+					/usr/include/libxml2,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				LIVECODE_DEP_FILE = "$(SRCROOT)/mergGoogle/mergGoogle.ios";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DGDATA_INCLUDE_SPREADSHEET_SERVICE=1",
+					"-DGDATA_REQUIRE_SERVICE_INCLUDES=0",
+					"-DGTM_INCLUDE_OAUTH2=1",
+					"-DGDATA_IPHONE=1",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B2E214A91B65A58E001F9282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "$(SRCROOT)/mergGoogle/test-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B2E214AA1B65A58E001F9282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "$(SRCROOT)/mergGoogle/test-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B214E0801B797A4C00126821 /* Build configuration list for PBXNativeTarget "mergGoogle-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B214E0811B797A4C00126821 /* Debug */,
+				B214E0821B797A4C00126821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2E2148F1B65A58E001F9282 /* Build configuration list for PBXProject "mergGoogle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2E214A31B65A58E001F9282 /* Debug */,
+				B2E214A41B65A58E001F9282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2E214A51B65A58E001F9282 /* Build configuration list for PBXNativeTarget "mergGoogle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2E214A61B65A58E001F9282 /* Debug */,
+				B2E214A71B65A58E001F9282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2E214A81B65A58E001F9282 /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2E214A91B65A58E001F9282 /* Debug */,
+				B2E214AA1B65A58E001F9282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2E2148C1B65A58E001F9282 /* Project object */;
+}

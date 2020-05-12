@@ -1,0 +1,7 @@
+framework Foundation
+framework Security
+framework UIKit
+framework CoreGraphics
+framework CFNetwork
+framework SystemConfiguration
+library xml2

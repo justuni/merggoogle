@@ -1,0 +1,141 @@
+//
+//  mergGoogle.lcidlc
+//  mergGoogle
+//
+//  Created by Monte Goulding on 27/07/2015.
+//  Copyright 2015 __MyCompanyName__. All rights reserved.
+//
+
+// The name of the external (note external name must be all lowercase!)
+external mergGoogle
+
+// * header
+// mergGoogle is an iOS external for interacting with Google services. Currently it only supports Spreadsheets.
+// * end
+
+
+use objc-objects
+
+on startup call mergGoogleStartup
+
+// * section Authentication
+// * end
+
+function mergGoogleAuth // Look in the keychain for valid authentication data and if not found present an authentication dialog.
+    in pScope as objc-string // The scope of the authentication as urls separated by space. For spreadsheets use "https://spreadsheets.google.com/feeds"
+    in pClientID as objc-string // Your client ID obtained from https://code.google.com/apis/console
+    in pSecret as objc-string // Your client secret obtained from https://code.google.com/apis/console
+    in pKeychainItemName as objc-string // A string used to save the authentication data to.
+    return objc-string // An id for the saved authentication data or an error string
+
+tail command mergGoogleSpreadsheetsInitialize // Initialise the spreadsheet client with the authentication data
+    in pAuth as integer // An id as returned by mergGoogleAuth
+
+// * section Spreadsheets
+// * end
+
+tail command mergGoogleLoadSpreadsheets // Load the user's spreadsheets. The mergGoogleSpreadsheetsLoaded and mergGoogleLoadSpreadsheetsError message is sent to the control that called mergGoogleSpreadsheetsInitialize
+
+// * message mergGoogleSpreadsheetsLoaded // Sent to the control that called mergGoogleSpreadsheetsInitialize.
+// param pSpreadsheets as objc-string // A tab delimited list of spreadsheets with item 1 being the spreadsheet identifier and item 2 being the title of the spreasheet.
+// * end
+
+// * message mergGoogleLoadSpreadsheetsError // Sent to the control that called mergGoogleSpreadsheetsInitialize.
+// param pError as objc-string // An error message describing the reason for the failure to load the spreadsheets.
+// * end
+
+// * section Worksheets
+// * end
+
+tail command mergGoogleLoadWorksheets // Load a specific worksheet from a given spreadsheet. The mergGoogleWorksheetsLoaded and mergGoogleLoadWorksheetsError message is sent to the control that called mergGoogleSpreadsheetsInitialize
+    optional in pSpreadsheet as objc-string default "" // A spreadsheet identifier as returned by the mergGoogleSpreadsheetsLoaded message. If empty or no parameter passed then the spreadsheet will be the currently loaded spreadsheet.
+
+// * message mergGoogleWorksheetsLoaded // Sent to the control that called mergGoogleSpreadsheetsInitialize.
+// param pSpreadsheet as objc-string // The identifier of the spreadsheet that the worksheets were loaded from.
+// param pWorksheets as objc-string // A tab delimited list of worksheets with item 1 being the worksheet identifier, item 2 being the title of the worksheet, item 3 the row count and item 4 being the column count.
+// * end
+
+// * message mergGoogleLoadWorksheetsError // Sent to the control that called mergGoogleSpreadsheetsInitialize.
+// param pError as objc-string // An error message describing the reason for the failure to load the worksheets.
+// * end
+
+tail command mergGoogleCreateWorksheet // Create a new worksheet in a given spreadsheet. The mergGoogleWorksheetCreated and mergGoogleCreateWorksheetError message is sent to the control that called mergGoogleSpreadsheetsInitialize
+    in pTitle as objc-string // A title for the new worksheet
+    optional in pSpreadsheet as objc-string default "" // A spreadsheet identifier as returned by the mergGoogleSpreadsheetsLoaded message. If empty or no parameter passed then the spreadsheet will be the currently loaded spreadsheet.
+    optional in pColums as integer default -1 // The number of columns in the new worksheet. The default value of -1 will leave this value unset.
+    optional in pRows as integer default -1 // The number of rows in the new worksheet. The default value of -1 will leave this value unset.
+
+// * message mergGoogleWorksheetCreated // Sent to the control that called mergGoogleSpreadsheetsInitialize.
+// param pWorksheet as objc-string // The identifier of the newly created worksheet
+// * end
+
+// * message mergGoogleCreateWorksheetError // Sent to the control that called mergGoogleSpreadsheetsInitialize.
+// param pError as objc-string // An error message describing the reason for the failure to create the worksheet.
+// * end
+
+tail command mergGoogleUpdateWorksheet // Update a given worksheet. The mergGoogleWorksheetCreated and mergGoogleCreateWorksheetError message is sent to the control that called mergGoogleSpreadsheetsInitialize
+    in pTitle as objc-string // A title for the worksheet
+    optional in pWorksheet as objc-string default "" // A spreadsheet identifier as returned by the mergGoogleWorksheetsLoaded message. If empty or no parameter passed then the worksheet will be the currently loaded worksheet.
+    optional in pColums as integer default -1 // The number of columns in the worksheet. The default value of -1 will leave this value unset.
+    optional in pRows as integer default -1 // The number of rows in the worksheet. The default value of -1 will leave this value unset.
+
+// * message mergGoogleWorksheetUpdated // Sent to the control that called mergGoogleSpreadsheetsInitialize.
+// param pWorksheet as objc-string // The identifier of the newly created worksheet
+// * end
+
+// * message mergGoogleUpdateWorksheetError // Sent to the control that called mergGoogleSpreadsheetsInitialize.
+// param pError as objc-string // An error message describing the reason for the failure to create the worksheet.
+// * end
+
+tail command mergGoogleDeleteWorksheet // Delete a worksheet from a given spreadsheet
+    optional in pWorksheet as objc-string default "" // A spreadsheet identifier as returned by the mergGoogleWorksheetsLoaded message. If empty or no parameter passed then the worksheet will be the currently loaded worksheet.
+
+// * message mergGoogleWorksheetDeleted // Sent to the control that called mergGoogleSpreadsheetsInitialize.
+// param pWorksheet as objc-string // The identifier of the deleted worksheet.
+// * end
+
+// * message mergGoogleDeleteWorksheetError // Sent to the control that called mergGoogleSpreadsheetsInitialize.
+// param pWorksheet as objc-string // The identifier of the deleted worksheet.
+// param pError as objc-string // An error message describing the reason for the failure to delete the worksheet.
+// * end
+
+// * section Cells
+// * end
+
+tail command mergGoogleLoadCells // Load the cells for a given worksheet
+    optional in pWorksheet as objc-string default "" // A worksheet identifier as returned by the mergGoogleWorksheetsLoaded message. If empty or no parameter passed then the worksheet will be the currently loaded worksheet.
+
+// * message mergGoogleCellsLoaded // Sent to the control that called mergGoogleSpreadsheetsInitialize.
+// param pWorksheet as objc-string // The identifier of the worksheet that the cells were loaded from.
+// param pCellCount as integer // The total number of cells loaded
+// * end
+
+// * message mergGoogleLoadCellsError // Sent to the control that called mergGoogleSpreadsheetsInitialize.
+// param pError as objc-string // An error message describing the reason for the failure to load the cells.
+// * end
+
+tail function mergGoogleGetValueForCell // Get the value of a cell in the loaded worksheet
+    in pRow as integer // The cell row number
+    in pColumn as integer // The cell column number
+    optional in pInputString as boolean default false // If there is a formula for the cell then return that instead of the result value
+    return objc-string
+
+tail function mergGoogleGetAllCellValues // Get all the cells of the loaded worksheet in tab and return delimited format
+    optional in pInputString as boolean default false // If there is a formula for the cell then return that instead of the result value
+    return objc-string
+
+tail command mergGoogleSetValueForCell  // Set the value of a cell in a given worksheet. It's not necessary to load the worksheet cells in order to set the value of a cell.
+    in pRow as integer // The cell row number
+    in pColumn as integer // The cell column number
+    in pValue as objc-string // The value to set the cell to
+    optional in pWorksheet as objc-string default "" // A spreadsheet identifier as returned by the mergGoogleWorksheetsLoaded message. If empty or no parameter passed then the worksheet will be the currently loaded worksheet.
+
+// * message mergGoogleCellValueSet // Sent to the control that called mergGoogleSpreadsheetsInitialize.
+// param pRow as integer
+// param pColumn as integer
+// * end
+
+// * message mergGoogleSetCellValueError // Sent to the control that called mergGoogleSpreadsheetsInitialize.
+// param pError as objc-string // An error message describing the reason for the failure to set the cell value.
+// * end
+
